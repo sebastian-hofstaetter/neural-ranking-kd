@@ -26,11 +26,14 @@ If you have any questions, suggestions, or want to collaborate please don't hesi
 ````
 ## Pre-Trained Models
 
-We provide the following full-trained distilled models via the HuggingFace model hub:
+We provide the following full-trained 6 layer DistilBERT-based models (trained with Margin-MSE using a 3 teacher BERT<sub>CAT</sub> ensemble (T2 in the paper) on MSMARCO-Passage) via the HuggingFace model hub:
 
-* **BERT<sub>DOT</sub>** (re-ranking and dense-retrieval model) trained with Margin-MSE using a 3 teacher BERT<sub>CAT</sub> ensemble (T2 in the paper) on MSMARCO-Passage: https://huggingface.co/sebastian-hofstaetter/distilbert-dot-margin_mse-T2-msmarco
+* **BERT<sub>DOT</sub>** (re-ranking and dense-retrieval model): https://huggingface.co/sebastian-hofstaetter/distilbert-dot-margin_mse-T2-msmarco
 
-The DistilBERT architecture should work as plug 'n play everywhere you use the transformer library. For a minimal usage example of the BERT<sub>DOT</sub> model check out our notebook [minimal_bert_dot_usage_example.ipynb](minimal_bert_dot_usage_example.ipynb) here or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebastian-hofstaetter/neural-ranking-kd/blob/master/minimal_bert_dot_usage_example.ipynb)
+    The DistilBERT architecture should work as plug 'n play everywhere you use the transformer library. For a minimal usage example of the BERT<sub>DOT</sub> model check out our notebook [minimal_bert_dot_usage_example.ipynb](minimal_bert_dot_usage_example.ipynb) here or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebastian-hofstaetter/neural-ranking-kd/blob/master/minimal_bert_dot_usage_example.ipynb)
+
+* **ColBERT** (re-ranking and dense-retrieval model): https://huggingface.co/sebastian-hofstaetter/colbert-distilbert-margin_mse-T2-msmarco
+    For a minimal usage example of our ColBERT checkpoint check out our notebook [minimal_colbert_usage_example.ipynb](minimal_colbert_usage_example.ipynb) here or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebastian-hofstaetter/neural-ranking-kd/blob/master/minimal_colbert_usage_example.ipynb)
 
 If you have a specific request for a pre-trained model from the paper, please create an issue here :) 
 
