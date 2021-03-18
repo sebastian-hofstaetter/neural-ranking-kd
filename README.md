@@ -33,6 +33,7 @@ We provide the following full-trained 6 layer DistilBERT-based models (trained w
     The DistilBERT architecture should work as plug 'n play everywhere you use the transformer library. For a minimal usage example of the BERT<sub>DOT</sub> model check out our notebook [minimal_bert_dot_usage_example.ipynb](minimal_bert_dot_usage_example.ipynb) here or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebastian-hofstaetter/neural-ranking-kd/blob/master/minimal_bert_dot_usage_example.ipynb)
 
 * **ColBERT** (re-ranking and dense-retrieval model): https://huggingface.co/sebastian-hofstaetter/colbert-distilbert-margin_mse-T2-msmarco
+    
     For a minimal usage example of our ColBERT checkpoint check out our notebook [minimal_colbert_usage_example.ipynb](minimal_colbert_usage_example.ipynb) here or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebastian-hofstaetter/neural-ranking-kd/blob/master/minimal_colbert_usage_example.ipynb)
 
 If you have a specific request for a pre-trained model from the paper, please create an issue here :) 
