@@ -40,6 +40,10 @@ We provide the following full-trained 6 layer DistilBERT-based models (trained w
 
     For a minimal usage example of the BERT<sub>CAT</sub> model check out our notebook [minimal_bert_cat_usage_example.ipynb](minimal_bert_cat_usage_example.ipynb) here or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebastian-hofstaetter/neural-ranking-kd/blob/master/minimal_bert_cat_usage_example.ipynb)
 
+* **PreTTR** (re-ranking model): https://huggingface.co/sebastian-hofstaetter/prettr-distilbert-split_at_3-margin_mse-T2-msmarco
+    
+    For a minimal usage example of our PreTTR checkpoint check out our notebook [minimal_prettr_usage_example.ipynb](minimal_prettr_usage_example.ipynb) here or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebastian-hofstaetter/neural-ranking-kd/blob/master/minimal_prettr_usage_example.ipynb)
+
 
 If you have a specific request for a pre-trained model from the paper, please create an issue here :) 
 
