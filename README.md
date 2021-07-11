@@ -58,9 +58,13 @@ The teacher files (using the data from "Train Triples Small" with ~40 million tr
 
 available at Zenodo: https://zenodo.org/record/4068216
 
-## Cross Architecture Knowledge Distillation
+## Source Code
 
-The full source-code for our paper is here: https://github.com/sebastian-hofstaetter/transformer-kernel-ranking
+The full source-code for our paper is here, as part of our matchmaker library: https://github.com/sebastian-hofstaetter/matchmaker
+
+We have getting started guides for training teachers & students, as well as a range of other possibilities surrounding the Margin-MSE loss.
+
+## Cross Architecture Knowledge Distillation
 
 The latency of neural ranking models at query time is largely dependent on the architecture and deliberate choices by their designers to trade-off effectiveness for higher efficiency. This focus on low query latency of a rising number of efficient ranking architectures make them feasible for production deployment. In machine learning an increasingly common approach to close the effectiveness gap of more efficient models is to apply knowledge distillation from a large teacher model to a smaller student model. We find that different ranking architectures tend to produce output scores in different magnitudes. Based on this finding, we propose a cross-architecture training procedure with a margin focused loss (Margin-MSE), that adapts knowledge distillation to the varying score output distributions of different BERT and non-BERT ranking architectures. We apply the teachable information as additional fine-grained labels to existing training triples of the MSMARCO-Passage collection. We evaluate our procedure of distilling knowledge from state-of-the-art concatenated BERT models to four different efficient architectures (TK, ColBERT, PreTT, and a BERT CLS dot product model). We show that across our evaluated architectures our Margin-MSE knowledge distillation significantly improves their effectiveness without compromising their efficiency. 
 
